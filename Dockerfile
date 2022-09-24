@@ -7,7 +7,7 @@ RUN apt-get update --yes --force-yes
 RUN apt-get install --yes --force-yes build-essential python python-setuptools curl python-pip libssl-dev
 RUN apt-get update --yes --force-yes
 RUN apt-get install --yes --force-yes python-software-properties python-mysqldb libmysqlclient-dev libffi-dev libssl-dev python-dev
-RUN curl -sL https://deb.nodesource.com/setup_14 | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN sudo apt-get --yes --force-yes install nodejs
 
 RUN apt-get install --yes --force-yes nginx supervisor
