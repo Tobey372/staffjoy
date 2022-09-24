@@ -11,7 +11,8 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN sudo apt-get --yes --force-yes install nodejs
 
 RUN apt-get install --yes --force-yes nginx supervisor
-RUN pip install uwsgi
+#RUN pip install uwsgi
+RUN pip install https://projects.unbit.it/downloads/uwsgi-lts.tar.gz
 
 # Add and install Python modules
 ADD requirements.txt /src/requirements.txt
